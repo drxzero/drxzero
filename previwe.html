@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previwe</title>
+    <link rel="icon" type="image/" href="icon1.png">
+</head>
+<body>
+
+    <div class="box2" >
+        <div>
+            <p class="welcome_Lable"><font color="white" size="5"><u><b>WELCOME TO REALITY</b></u></font> </p>
+            <P class="para" ><font color="white" face="'Poppins',sans-serif">ABOUT <HR class="para1"><BR class="para2">The Reality is a cutting-edge voice AI assistant that 
+                seamlessly integrates into your digital life. 
+                With its advanced natural language processing and intuitive interface, 
+                it understands your commands and completes tasks effortlessly,
+                 making your interactions with technology more efficient and enjoyable.</font> </P>
+                <br><br> <a href="login.html"><button class="btn2">LOGGING TO REALITY</button></a>
+                </div>
+
+    </div>
+    <style>
+          @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
+       body{
+            background: #060c21;
+            
+       }
+          .btn2{
+            font-size: 11px;
+            padding: 8px 20px;
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            
+        
+        }
+        
+        .btn2::after{
+            content: "";
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(235deg,
+            #00b7ff,#0020d4,#8f04e0,#bd06e2);
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        .btn2::before{
+            content: "";
+            background: linear-gradient(
+                45deg,
+               #00aeff,
+                #00ffd5, #002bff, #7700ff);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 600%;
+            z-index: -1;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            filter: blur(8px);
+            animation: glowing 20s linear infinite;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+            opacity: 1;
+        }
+        @keyframes glowing{
+            0% {background-position: 0 0;}
+            50% {background-position: 400% 0;}
+            100% {background-position: 0 0;}
+        }
+        .box2{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #060c21;
+            border-radius: 10px;
+            padding: 60px;
+            margin:  270px auto ;
+            
+        }
+        .box2:before{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        .box2:after{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            z-index: -2;
+            filter: blur(60px);
+            border-radius: 10px;
+        }
+        .box2:before,
+        .box2:after
+        {
+            background: linear-gradient(235deg,
+            #89ff00,#060c21,#00bcd4,#e00484,#e20611,#6708e4,#d5ec05);
+        }
+        .welcome_Lable{
+            font-size: 1px;
+            text-shadow: 0px 0px 5px #fff,
+            0px 0px 10px #fff;
+            font-family: 'Poppins',sans-serif;}
+        
+        .para1{
+            font-size: 1px;
+            text-shadow: 0px 0px 5px #fff;
+            font-family: 'Poppins',sans-serif;
+            color: white;
+        }
+        .para2{
+            font-size: 1px;
+            text-shadow: 0px 0px 5px #fff;
+            font-family: 'Poppins',sans-serif;
+            color: white;
+        }
+    
+    </style>
+
+
+</body>
+</html>
